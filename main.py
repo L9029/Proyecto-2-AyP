@@ -14,17 +14,24 @@ def word_in_phrase(word, phrase):
 #Arrays 
 #(proximo desarrollo)
 def extract(arr):
-    pass
+    m = []
+    
+    return m
 
 def seed_array():
     pass
 
 #Funcion principal
 def main():
-    p = palindrome()
-    w_p = word_in_phrase()
-    e = extract()
-    s = seed_array()
+    #p = palindrome()
+    #w_p = word_in_phrase()
+    e = extract(["l", "l", "o", "x", "x", "a",])
+    #s = seed_array()
+    
+    print(e)
     
     #Aqui va el menu
     pass
+
+if __name__ == "__main__":
+    main()
