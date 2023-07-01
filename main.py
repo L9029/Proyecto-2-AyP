@@ -12,22 +12,19 @@ def word_in_phrase(word, phrase):
         return False
 
 #Arrays 
-#(El algoritmo funciona pero solo para secuencia consecutivas de 2 elementos)
 def extract(arr):
-    m, s = [], []
+    m, c = [], 1
     arr += [""]
     
     for i in range(len(arr) - 1):
         if arr[i] == arr[i + 1]:
-            s += [arr[i]]
+            c += 1
         else:
-            if arr[i] == arr[i - 1]:
-                s += [arr[i]]
+            if c >= 2:
+                m += [[arr[i]] * c]
+                c = 1
         
-        m += s
-        s = []
-        
-    return [m]
+    return m
 
 def seed_array():
     pass
