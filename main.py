@@ -26,17 +26,29 @@ def extract(arr):
         
     return m
 
-def seed_array():
-    pass
+def seed_array(x, y):
+    s = 0
+    p = 1
+    
+    for i in range(len(y)):
+        if y[i] in x:
+            for j in range(len(x)):
+                if y[i] == x[j]:
+                    s += i
+                    p *= i
+    
+    return s + p
 
 #Funcion principal
 def main():
     #p = palindrome()
     #w_p = word_in_phrase()
-    e = extract(["l", "l", "l", "o", "x", "x"])
-    #s = seed_array()
+    #e = extract()
+    x = ["a", "c", "x", "a"]
+    y = ["y", "a", "x"]
+    s = seed_array(x, y)
     
-    print(e)
+    print(s)
     
     #Aqui va el menu
     pass
