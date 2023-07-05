@@ -35,7 +35,9 @@ def seed_array(x, y):
             for j in range(len(x)):
                 if y[i] == x[j]:
                     s += i
-                    p *= i
+                    
+                    if i != 0:
+                        p *= i
     
     return s + p
 
@@ -44,7 +46,7 @@ def main():
     #p = palindrome()
     #w_p = word_in_phrase()
     #e = extract()
-    x = ["a", "c", "x", "a"]
+    x = ["a", "c", "x", "a", "y"]
     y = ["y", "a", "x"]
     s = seed_array(x, y)
     
