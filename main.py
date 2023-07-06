@@ -26,29 +26,40 @@ def extract(arr):
         
     return m
 
-def seed_array(x, y):
-    s = 0
-    p = 1
+def create_seed(x, y):
+    suma = 0
+    producto = 1
     
-    for i in range(len(y)):
-        if y[i] in x:
-            for j in range(len(x)):
-                if y[i] == x[j]:
-                    s += i
-                    
-                    if i != 0:
-                        p *= i
+    if x and y:
+        for i in range(len(y)):
+            if y[i] in x:
+                for j in range(len(x)):
+                    if y[i] == x[j]:
+                        suma += i
+                        #Toma en cuenta que el indice tiene que ser cualquier numero diferente de 0
+                        if i != 0:
+                            producto *= i
+                            
+        result = suma + producto
     
-    return s + p
+        if result <= 1:
+            message = "No es posible generar la semilla"    
+            return message
+
+    else:
+        message = "La Lista se encuentra vacia, ingresar los datos correctamente"
+        return message
+    
+    return result
 
 #Funcion principal
 def main():
     #p = palindrome()
     #w_p = word_in_phrase()
     #e = extract()
-    x = ["a", "c", "x", "a", "y"]
-    y = ["y", "a", "x"]
-    s = seed_array(x, y)
+    x = ["", "a"]
+    y = ["", "a"]
+    s = create_seed(x, y)
     
     print(s)
     
