@@ -32,7 +32,7 @@ def extract(arr):
     return m
 
 #Función de Creación de Semilla
-def create_seed(x=["a", "c", "x", "a", "y"], y=["y", "a", "x"]):
+def create_seed(x=["a", "a", "c", "c", "s", "x", "x", "x", "x"], y=["a", "x", "c"]):
     suma = 0
     producto = 1
     
@@ -42,15 +42,13 @@ def create_seed(x=["a", "c", "x", "a", "y"], y=["y", "a", "x"]):
                 for j in range(len(x)):
                     if y[i] == x[j]:
                         suma += i
-                        #Toma en cuenta que el indice tiene que ser cualquier numero diferente de 0
-                        if i != 0:
-                            producto *= i
+                        producto *= i
                             
         result = suma + producto
     
-        if result <= 1:
-            message = "No es posible generar la semilla"    
-            return message
+        if result == 0:
+            result = 1   
+            return result
 
     else:
         message = "La Lista se encuentra vacia, ingresar los datos correctamente"
@@ -98,9 +96,9 @@ def main():
         print(e)
         
     elif selection == 4:
-        x = input("\nIngrese una Palabra: ")
-        y = input("\nIngrese una Frase: ")
-        s = create_seed(x, y)
+        #x = input("\nIngrese una Palabra: ")
+        #y = input("\nIngrese una Frase: ")
+        s = create_seed()
         
         print("")
         print(s)
