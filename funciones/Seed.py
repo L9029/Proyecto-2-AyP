@@ -1,5 +1,5 @@
 #Función de Creación de Semilla
-def create_seed(x=["a", "a", "c", "c", "s", "x", "x", "x", "x"], y=["a", "x", "c"]):
+def create_seed(x, y):
     suma = 0
     producto = 1
     
