@@ -1,4 +1,5 @@
 from funciones import *
+from Storage import *
 
 #Funcion principal
 def main():
@@ -25,6 +26,8 @@ Escribe el numero: """))
             #Funcion Palindrome
             x = input("\nIngrese una Palabra: ")
             p = palindrome(x)
+            
+            storage_p(x, p)
 
             print("")
             print(p)
@@ -34,6 +37,8 @@ Escribe el numero: """))
             x = input("\nIngrese una Palabra: ")
             y = input("\nIngrese una Frase: ")
             w_p = word_in_phrase(x, y)
+            
+            storage_wp(y, x, w_p)
 
             print("")
             print(w_p)
@@ -49,6 +54,8 @@ Escribe el numero: """))
                 long -= 1
             
             e = extract(arr)
+            
+            storage_e(arr, e)
 
             print("")        
             print(e)
@@ -71,6 +78,8 @@ Escribe el numero: """))
                 long2 -= 1
                 
             s = create_seed(arr1, arr2)
+            
+            storage_s(arr1, arr2, s)
 
             print("")
             print(s)

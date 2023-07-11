@@ -1,0 +1,3 @@
+Arreglo:['a', 'a', 'c', 'c', 's', 'x', 'x', 'x', 'x'], Peso:['a', 'x', 'c'], Resultado:8
+Arreglo:['a', 'c', 'x', 'a'], Peso:['y', 'a', 'x'], Resultado:6
+Arreglo:['a', 'c', 'c'], Peso:['y', 'a', 'x'], Resultado:2

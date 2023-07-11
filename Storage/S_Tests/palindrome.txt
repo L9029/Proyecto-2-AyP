@@ -1,0 +1,4 @@
+Palabra:ana, Resultador:True
+Palabra:aerea, Resultado:True
+Palabra:hellou, Resultado:False
+Palabra:napolitana, Resultado:False
