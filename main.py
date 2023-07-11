@@ -13,11 +13,12 @@ def main():
 
 Seleccione la funcion que desea provar:
     
-1)Palindrome
-2)Palabra en Frase
-3)Extraer Letras Repetidas
-4)Generador de Semilla
-5)Salir
+1)Funcion Palindrome
+2)Funcion Palabra en Frase
+3)Funcion Extraer Letras Repetidas
+4)Funcion Generador de Semilla
+5)Leer Resultados
+6)Salir
     
 Escribe el numero: """))
         
@@ -83,6 +84,9 @@ Escribe el numero: """))
 
             print("")
             print(s)
+        
+        elif selection == 5:
+            menu()
 
         else:
             print("\n...Saliendo...")
