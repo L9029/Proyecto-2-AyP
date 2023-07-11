@@ -1,0 +1,3 @@
+Frase:hola mundo, Palabra:casa, Resultado:False
+Frase:tengo mucho sueño, Palabra:sueño, Resultado:True
+Frase:me agrada la napolitana, Palabra:ana, Resultado:True

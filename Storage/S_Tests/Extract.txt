@@ -1,0 +1,5 @@
+Arreglo:['x', 'c', 'a', 'a', ''], Matriz:[['a', 'a']]
+Arreglo:['a', 'x', 'c', ''], Matriz:[]
+Arreglo:['a', 'a', 'c', 'c', 's', ''], Matriz:[['a', 'a'], ['c', 'c']]
+Arreglo:['x', 'a', 'c', ''], Matriz:[]
+Arreglo:['x', 'x', ''], Matriz:[['x', 'x']]
